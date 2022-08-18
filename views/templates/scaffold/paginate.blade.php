@@ -1,0 +1,1 @@
+@@include('mazer-templates::common.paginate', ['records' => ${!! $config->modelNames->camelPlural !!}])
