@@ -18,7 +18,7 @@
             </div>
 
             <div class="col-12 d-flex justify-content-end">
-              @{!! Form::submit(@if($config->options->localized) @@lang('crud.save') @else 'Save' @endif, ['class' => 'btn btn-primary me-1 mb-1']) !!}
+              @{!! Form::submit(@if($config->options->localized) __('crud.save') @else 'Save' @endif, ['class' => 'btn btn-primary me-1 mb-1']) !!}
 
               <a href="@{{ route('{!! $config->prefixes->getRoutePrefixWith('.') !!}{!! $config->modelNames->camelPlural !!}.index') }}" class="btn btn-light-secondary me-1 mb-1">@if($config->options->localized) @@lang('crud.cancel') @else Cancel @endif</a>
             </div>
