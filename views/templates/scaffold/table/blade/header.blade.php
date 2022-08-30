@@ -1,1 +1,1 @@
-<th>{!! $fieldTitle !!}</th>
+<th>@@lang('models/{{ $config->modelNames->camelPlural }}.fields.{{ $fieldName }}')</th>
