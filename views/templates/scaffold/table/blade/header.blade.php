@@ -1,1 +1,1 @@
-<th>@@lang('models/{{ $config->modelNames->camelPlural }}.fields.{{ $fieldName }}')</th>
+<th>@if($config->options->localized) @@lang('models/{{ $config->modelNames->camelPlural }}.fields.{{ $fieldName }}') @else {!! $fieldTitle !!} @endif</th>
