@@ -1,5 +1,5 @@
 <div class="table-responsive mb-3">
-    <table class="table table-bordered table-striped" id="aaas-table">
+    <table class="table table-bordered table-striped" id="{{ $config->modelNames->dashedPlural }}-table">
         <thead>
         <tr>
             {!! $fieldHeaders !!}
